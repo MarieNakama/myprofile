@@ -69,10 +69,12 @@
 
         .slider {
             display: flex;
+            flex-wrap: nowrap;
             transition: transform 0.5s ease;
         }
 
         .slide {
+            flex: 0 0 100%;
             min-width: 100%;
             flex-shrink: 0;
         }
@@ -1267,8 +1269,8 @@
 
                     <div class="grid grid-cols-2 gap-4 mb-6">
                         <div>
-                            <p class="font-medium text-gray-700">名前:</p>
-                            <p class="text-gray-600">仲間 真理恵</p>
+                            <p class="font-medium text-gray-700">あだ名:</p>
+                            <p class="text-gray-600">まる</p>
                         </div>
                         <div>
                             <p class="font-medium text-gray-700">出身地:</p>
@@ -1362,8 +1364,8 @@
                                 </div>
                                 <h5 class="text-md text-gray-600 mb-3">特別進学コース</h5>
                                 <p class="text-gray-600">
-                                    優等生×ギャル×ぶりっ子という技の組み合わせで最大のモテ期を獲得しました。
-                                    女からの好感度は絶望的な状態でしたが、当時はその事実にまったく気づいていませんでした。
+                                    料理同好会を立ち上げたり、学祭委員会に所属したりする中で、自分から行動する場面が増え、主体性を少しずつ発揮し始めました。
+                                    
                                 </p>
                             </div>
                         </div>
@@ -1422,30 +1424,31 @@
             </div>
             <!-- タブとスライダーセクション -->
             <div class="mt-16">
-                <h3 class="text-2xl font-semibold text-gray-800 mb-6 text-center">プロジェクト実績</h3>
+                <h3 class="text-2xl font-semibold text-gray-800 mb-6 text-center">Episode</h3>
 
                 <!-- タブナビゲーション -->
                 <div class="flex border-b border-gray-300 mb-6 overflow-x-auto">
                     <button class="tab-button tab-active px-6 py-3 font-medium text-gray-700 focus:outline-none"
                         data-tab="tab1">
-                        ノンデリ少女
+                        幼少期
                     </button>
                     <button class="tab-button px-6 py-3 font-medium text-gray-700 focus:outline-none" data-tab="tab2">
-                        孤高の爆モテ少女
+                        高校生時代
                     </button>
                     <button class="tab-button px-6 py-3 font-medium text-gray-700 focus:outline-none" data-tab="tab3">
-                        UI/UXデザイン
+                        作業療法士時代
                     </button>
                     <button class="tab-button px-6 py-3 font-medium text-gray-700 focus:outline-none" data-tab="tab4">
-                        その他
+                        SE時代①
+                    </button>
+                    <button class="tab-button px-6 py-3 font-medium text-gray-700 focus:outline-none" data-tab="tab5">
+                        SE時代②
                     </button>
                 </div>
 
                 <!-- タブコンテンツ -->
                 <div class="tab-content active" id="tab1">
                     <div class="bg-white rounded-lg shadow-md p-6">
-                        <h4 class="text-xl font-semibold text-gray-800 mb-4">ノンデリ少女</h4>
-
                         <!-- スライダーコンテナ -->
                         <div class="slider-container rounded-lg overflow-hidden mb-6">
                             <div class="slider">
@@ -1455,11 +1458,6 @@
                                         class="bg-[#f0f2f5] rounded-lg overflow-hidden mx-auto w-full max-w-md md:max-w-2xl">
                                         <div class="aspect-[3/2] w-full overflow-hidden bg-[#3e3a3a]">
                                             <img src="ノンデリ_000.png" class="w-full h-full object-cover" />
-                                        </div>
-
-                                        <div class="p-4">
-                                            <h5 class="font-semibold text-lg mb-2">ECサイトリニューアル</h5>
-                                            <p class="text-gray-600">大手アパレルブランドのECサイトをリニューアル。売上が前年比30%増加。</p>
                                         </div>
                                     </div>
                                 </div>
@@ -1474,8 +1472,8 @@
                                         </div>
 
                                         <div class="p-4">
-                                            <h5 class="font-semibold text-lg mb-2">ECサイトリニューアル</h5>
-                                            <p class="text-gray-600">大手アパレルブランドのECサイトをリニューアル。売上が前年比30%増加。</p>
+                                            <h5 class="font-semibold text-lg mb-2">まる、爆誕！</h5>
+                                            <p class="text-gray-600">1994年7月14日(木) 東京都多摩市で、まるは元気に産声を上げた</p>
                                         </div>
                                     </div>
                                 </div>
@@ -1489,8 +1487,8 @@
                                         </div>
 
                                         <div class="p-4">
-                                            <h5 class="font-semibold text-lg mb-2">ECサイトリニューアル</h5>
-                                            <p class="text-gray-600">大手アパレルブランドのECサイトをリニューアル。売上が前年比30%増加。</p>
+                                            <h5 class="font-semibold text-lg mb-2">ノンデリ少女、完成！</h5>
+                                            <p class="text-gray-600">東京の山あいで伸び伸び育ったまるは、デリカシーゼロの少女になった</p>
                                         </div>
                                     </div>
                                 </div>
@@ -1504,8 +1502,8 @@
                                         </div>
 
                                         <div class="p-4">
-                                            <h5 class="font-semibold text-lg mb-2">ECサイトリニューアル</h5>
-                                            <p class="text-gray-600">大手アパレルブランドのECサイトをリニューアル。売上が前年比30%増加。</p>
+                                            <h5 class="font-semibold text-lg mb-2">おばあちゃんと初対面！</h5>
+                                            <p class="text-gray-600">ある日、まるはついに感動のおばあちゃんとの初対面を果たす</p>
                                         </div>
                                     </div>
                                 </div>
@@ -1519,8 +1517,8 @@
                                         </div>
 
                                         <div class="p-4">
-                                            <h5 class="font-semibold text-lg mb-2">ECサイトリニューアル</h5>
-                                            <p class="text-gray-600">大手アパレルブランドのECサイトをリニューアル。売上が前年比30%増加。</p>
+                                            <h5 class="font-semibold text-lg mb-2">ノンデリ、さく裂！</h5>
+                                            <p class="text-gray-600">まる、容赦なくノンデリ発動</p>
                                         </div>
                                     </div>
                                 </div>
@@ -1565,76 +1563,76 @@
 
                 <div class="tab-content" id="tab2">
                     <div class="bg-white rounded-lg shadow-md p-6">
-                        <h4 class="text-xl font-semibold text-gray-800 mb-4">モバイルアプリ開発プロジェクト</h4>
                         <!-- スライダーコンテナ -->
                         <div class="slider-container rounded-lg overflow-hidden mb-6">
                             <div class="slider">
                                 <!-- スライド1 -->
                                 <div class="slide">
-                                    <div class="bg-[#f0f2f5] rounded-lg overflow-hidden">
-                                        <div class="h-64 bg-[#3e3a3a] flex items-center justify-center">
-                                            <svg class="w-24 h-24 text-white" fill="currentColor" viewBox="0 0 24 24">
-                                                <path
-                                                    d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z">
-                                                </path>
-                                                <path d="M12 8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z">
-                                                </path>
-                                            </svg>
-                                        </div>
-                                        <div class="p-4">
-                                            <h5 class="font-semibold text-lg mb-2">ECサイトリニューアル</h5>
-                                            <p class="text-gray-600">大手アパレルブランドのECサイトをリニューアル。売上が前年比30%増加。</p>
+                                    <div
+                                        class="bg-[#f0f2f5] rounded-lg overflow-hidden mx-auto w-full max-w-md md:max-w-2xl">
+                                        <div class="aspect-[3/2] w-full overflow-hidden bg-[#3e3a3a]">
+                                            <img src="爆モテ_000.png" class="w-full h-full object-cover" />
                                         </div>
                                     </div>
                                 </div>
 
+
                                 <!-- スライド2 -->
                                 <div class="slide">
-                                    <div class="bg-[#f0f2f5] rounded-lg overflow-hidden">
-                                        <div class="h-64 bg-[#4a6fa5] flex items-center justify-center">
-                                            <svg class="w-24 h-24 text-white" fill="currentColor" viewBox="0 0 24 24">
-                                                <path
-                                                    d="M21 2H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h7v2H8v2h8v-2h-2v-2h7c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H3V4h18v12z">
-                                                </path>
-                                            </svg>
+                                    <div
+                                        class="bg-[#f0f2f5] rounded-lg overflow-hidden mx-auto w-full max-w-md md:max-w-2xl">
+                                        <div class="aspect-[3/2] w-full overflow-hidden bg-[#3e3a3a]">
+                                            <img src="爆モテ_001.png" class="w-full h-full object-cover" />
                                         </div>
+
                                         <div class="p-4">
-                                            <h5 class="font-semibold text-lg mb-2">企業ポータルサイト</h5>
-                                            <p class="text-gray-600">大手製造業の社内ポータルサイトを開発。業務効率が20%向上。</p>
+                                            <h5 class="font-semibold text-lg mb-2">3キャラを使いこなす！</h5>
+                                            <p class="text-gray-600">成長したまるは3つのキャラクターを器用に使い分けていた</p>
                                         </div>
                                     </div>
                                 </div>
 
                                 <!-- スライド3 -->
                                 <div class="slide">
-                                    <div class="bg-[#f0f2f5] rounded-lg overflow-hidden">
-                                        <div class="h-64 bg-[#6b8e23] flex items-center justify-center">
-                                            <svg class="w-24 h-24 text-white" fill="currentColor" viewBox="0 0 24 24">
-                                                <path
-                                                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z">
-                                                </path>
-                                            </svg>
+                                    <div
+                                        class="bg-[#f0f2f5] rounded-lg overflow-hidden mx-auto w-full max-w-md md:max-w-2xl">
+                                        <div class="aspect-[3/2] w-full overflow-hidden bg-[#3e3a3a]">
+                                            <img src="爆モテ_002.png" class="w-full h-full object-cover" />
                                         </div>
+
                                         <div class="p-4">
-                                            <h5 class="font-semibold text-lg mb-2">観光情報ウェブサイト</h5>
-                                            <p class="text-gray-600">地方自治体の観光情報サイトを開発。訪問者数が2倍に増加。</p>
+                                            <h5 class="font-semibold text-lg mb-2">爆モテ期到来！</h5>
+                                            <p class="text-gray-600">学校の先生と男子高校生を手玉に取る</p>
                                         </div>
                                     </div>
                                 </div>
 
                                 <!-- スライド4 -->
                                 <div class="slide">
-                                    <div class="bg-[#f0f2f5] rounded-lg overflow-hidden">
-                                        <div class="h-64 bg-[#8a2be2] flex items-center justify-center">
-                                            <svg class="w-24 h-24 text-white" fill="currentColor" viewBox="0 0 24 24">
-                                                <path
-                                                    d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-5 14H4v-4h11v4zm0-5H4V9h11v4zm5 5h-4V9h4v9z">
-                                                </path>
-                                            </svg>
+                                    <div
+                                        class="bg-[#f0f2f5] rounded-lg overflow-hidden mx-auto w-full max-w-md md:max-w-2xl">
+                                        <div class="aspect-[3/2] w-full overflow-hidden bg-[#3e3a3a]">
+                                            <img src="爆モテ_003.png" class="w-full h-full object-cover" />
                                         </div>
+
                                         <div class="p-4">
-                                            <h5 class="font-semibold text-lg mb-2">オンライン学習プラットフォーム</h5>
-                                            <p class="text-gray-600">教育機関向けのオンライン学習プラットフォームを開発。5000人以上のユーザーが利用。</p>
+                                            <h5 class="font-semibold text-lg mb-2">孤高の爆モテ少女誕生！</h5>
+                                            <p class="text-gray-600">「この学校は私のものよ！」と思っていた</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- スライド5 -->
+                                <div class="slide">
+                                    <div
+                                        class="bg-[#f0f2f5] rounded-lg overflow-hidden mx-auto w-full max-w-md md:max-w-2xl">
+                                        <div class="aspect-[3/2] w-full overflow-hidden bg-[#3e3a3a]">
+                                            <img src="爆モテ_004.png" class="w-full h-full object-cover" />
+                                        </div>
+
+                                        <div class="p-4">
+                                            <h5 class="font-semibold text-lg mb-2">女友達</h5>
+                                            <p class="text-gray-600">振り返ってみれば、女友達が全然いないことに気づいた</p>
                                         </div>
                                     </div>
                                 </div>
@@ -1671,110 +1669,84 @@
                                 data-index="2"></button>
                             <button class="slider-dot w-3 h-3 rounded-full bg-[#3e3a3a] opacity-40"
                                 data-index="3"></button>
-                        </div>
-
-                        <!-- スライダーコメント -->
-                        <div class="slider-comments">
-                            <div class="slider-comment active bg-[#f0f2f5] p-4 rounded-lg">
-                                <p class="text-gray-700 italic">
-                                    「このECサイトのリニューアルプロジェクトでは、ユーザー体験を最優先に考え、モバイルファーストのアプローチで設計しました。結果として、コンバージョン率が大幅に向上し、クライアントからも高い評価をいただきました。」
-                                </p>
-                                <p class="text-right text-gray-600 mt-2">- プロジェクト担当 2021年</p>
-                            </div>
-                            <div class="slider-comment hidden bg-[#f0f2f5] p-4 rounded-lg">
-                                <p class="text-gray-700 italic">
-                                    「社内ポータルサイトの開発では、複雑な業務フローを理解し、シンプルで使いやすいインターフェースに落とし込む作業が最大の課題でした。ユーザーインタビューを重ね、実際の業務に即したシステムを構築できました。」
-                                </p>
-                                <p class="text-right text-gray-600 mt-2">- プロジェクト担当 2020年</p>
-                            </div>
-                            <div class="slider-comment hidden bg-[#f0f2f5] p-4 rounded-lg">
-                                <p class="text-gray-700 italic">
-                                    「観光情報サイトでは、地域の魅力を最大限に引き出すビジュアルデザインと、訪問者が必要な情報にすぐにアクセスできる導線設計を心がけました。多言語対応も実装し、海外からの観光客増加にも貢献しています。」
-                                </p>
-                                <p class="text-right text-gray-600 mt-2">- プロジェクト担当 2019年</p>
-                            </div>
-                            <div class="slider-comment hidden bg-[#f0f2f5] p-4 rounded-lg">
-                                <p class="text-gray-700 italic">
-                                    「オンライン学習プラットフォームの開発では、教育効果を高めるための機能設計に注力しました。特に進捗管理とフィードバック機能は、学習者のモチベーション維持に大きく貢献しています。」
-                                </p>
-                                <p class="text-right text-gray-600 mt-2">- プロジェクト担当 2022年</p>
-                            </div>
+                            <button class="slider-dot w-3 h-3 rounded-full bg-[#3e3a3a] opacity-40"
+                                data-index="4"></button>
                         </div>
                     </div>
                 </div>
 
                 <div class="tab-content" id="tab3">
                     <div class="bg-white rounded-lg shadow-md p-6">
-                        <h4 class="text-xl font-semibold text-gray-800 mb-4">UI/UXデザインプロジェクト</h4>
                         <!-- スライダーコンテナ -->
                         <div class="slider-container rounded-lg overflow-hidden mb-6">
                             <div class="slider">
                                 <!-- スライド1 -->
                                 <div class="slide">
-                                    <div class="bg-[#f0f2f5] rounded-lg overflow-hidden">
-                                        <div class="h-64 bg-[#3e3a3a] flex items-center justify-center">
-                                            <svg class="w-24 h-24 text-white" fill="currentColor" viewBox="0 0 24 24">
-                                                <path
-                                                    d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z">
-                                                </path>
-                                                <path d="M12 8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z">
-                                                </path>
-                                            </svg>
-                                        </div>
-                                        <div class="p-4">
-                                            <h5 class="font-semibold text-lg mb-2">ECサイトリニューアル</h5>
-                                            <p class="text-gray-600">大手アパレルブランドのECサイトをリニューアル。売上が前年比30%増加。</p>
+                                    <div
+                                        class="bg-[#f0f2f5] rounded-lg overflow-hidden mx-auto w-full max-w-md md:max-w-2xl">
+                                        <div class="aspect-[3/2] w-full overflow-hidden bg-[#3e3a3a]">
+                                            <img src="リスキリング少女_000.png" class="w-full h-full object-cover" />
                                         </div>
                                     </div>
                                 </div>
 
+
                                 <!-- スライド2 -->
                                 <div class="slide">
-                                    <div class="bg-[#f0f2f5] rounded-lg overflow-hidden">
-                                        <div class="h-64 bg-[#4a6fa5] flex items-center justify-center">
-                                            <svg class="w-24 h-24 text-white" fill="currentColor" viewBox="0 0 24 24">
-                                                <path
-                                                    d="M21 2H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h7v2H8v2h8v-2h-2v-2h7c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H3V4h18v12z">
-                                                </path>
-                                            </svg>
+                                    <div
+                                        class="bg-[#f0f2f5] rounded-lg overflow-hidden mx-auto w-full max-w-md md:max-w-2xl">
+                                        <div class="aspect-[3/2] w-full overflow-hidden bg-[#3e3a3a]">
+                                            <img src="リスキリング少女_001.png" class="w-full h-full object-cover" />
                                         </div>
+
                                         <div class="p-4">
-                                            <h5 class="font-semibold text-lg mb-2">企業ポータルサイト</h5>
-                                            <p class="text-gray-600">大手製造業の社内ポータルサイトを開発。業務効率が20%向上。</p>
+                                            <h5 class="font-semibold text-lg mb-2">祝就職！</h5>
+                                            <p class="text-gray-600">夢の作業療法士ライフが始まる</p>
                                         </div>
                                     </div>
                                 </div>
 
                                 <!-- スライド3 -->
                                 <div class="slide">
-                                    <div class="bg-[#f0f2f5] rounded-lg overflow-hidden">
-                                        <div class="h-64 bg-[#6b8e23] flex items-center justify-center">
-                                            <svg class="w-24 h-24 text-white" fill="currentColor" viewBox="0 0 24 24">
-                                                <path
-                                                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z">
-                                                </path>
-                                            </svg>
+                                    <div
+                                        class="bg-[#f0f2f5] rounded-lg overflow-hidden mx-auto w-full max-w-md md:max-w-2xl">
+                                        <div class="aspect-[3/2] w-full overflow-hidden bg-[#3e3a3a]">
+                                            <img src="リスキリング少女_002.png" class="w-full h-full object-cover" />
                                         </div>
+
                                         <div class="p-4">
-                                            <h5 class="font-semibold text-lg mb-2">観光情報ウェブサイト</h5>
-                                            <p class="text-gray-600">地方自治体の観光情報サイトを開発。訪問者数が2倍に増加。</p>
+                                            <h5 class="font-semibold text-lg mb-2">理学療法士の下位互換？</h5>
+                                            <p class="text-gray-600">作業療法士は理学療法士の下位互換で、不要な職業説が浮上する</p>
                                         </div>
                                     </div>
                                 </div>
 
                                 <!-- スライド4 -->
                                 <div class="slide">
-                                    <div class="bg-[#f0f2f5] rounded-lg overflow-hidden">
-                                        <div class="h-64 bg-[#8a2be2] flex items-center justify-center">
-                                            <svg class="w-24 h-24 text-white" fill="currentColor" viewBox="0 0 24 24">
-                                                <path
-                                                    d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-5 14H4v-4h11v4zm0-5H4V9h11v4zm5 5h-4V9h4v9z">
-                                                </path>
-                                            </svg>
+                                    <div
+                                        class="bg-[#f0f2f5] rounded-lg overflow-hidden mx-auto w-full max-w-md md:max-w-2xl">
+                                        <div class="aspect-[3/2] w-full overflow-hidden bg-[#3e3a3a]">
+                                            <img src="リスキリング少女_003.png" class="w-full h-full object-cover" />
                                         </div>
+
                                         <div class="p-4">
-                                            <h5 class="font-semibold text-lg mb-2">オンライン学習プラットフォーム</h5>
-                                            <p class="text-gray-600">教育機関向けのオンライン学習プラットフォームを開発。5000人以上のユーザーが利用。</p>
+                                            <h5 class="font-semibold text-lg mb-2">将来の不安</h5>
+                                            <p class="text-gray-600">作業療法士としての将来に不安を抱える</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- スライド5 -->
+                                <div class="slide">
+                                    <div
+                                        class="bg-[#f0f2f5] rounded-lg overflow-hidden mx-auto w-full max-w-md md:max-w-2xl">
+                                        <div class="aspect-[3/2] w-full overflow-hidden bg-[#3e3a3a]">
+                                            <img src="リスキリング少女_004.png" class="w-full h-full object-cover" />
+                                        </div>
+
+                                        <div class="p-4">
+                                            <h5 class="font-semibold text-lg mb-2">退職！</h5>
+                                            <p class="text-gray-600">思い切って退職してみることにした</p>
                                         </div>
                                     </div>
                                 </div>
@@ -1811,110 +1783,83 @@
                                 data-index="2"></button>
                             <button class="slider-dot w-3 h-3 rounded-full bg-[#3e3a3a] opacity-40"
                                 data-index="3"></button>
-                        </div>
-
-                        <!-- スライダーコメント -->
-                        <div class="slider-comments">
-                            <div class="slider-comment active bg-[#f0f2f5] p-4 rounded-lg">
-                                <p class="text-gray-700 italic">
-                                    「このECサイトのリニューアルプロジェクトでは、ユーザー体験を最優先に考え、モバイルファーストのアプローチで設計しました。結果として、コンバージョン率が大幅に向上し、クライアントからも高い評価をいただきました。」
-                                </p>
-                                <p class="text-right text-gray-600 mt-2">- プロジェクト担当 2021年</p>
-                            </div>
-                            <div class="slider-comment hidden bg-[#f0f2f5] p-4 rounded-lg">
-                                <p class="text-gray-700 italic">
-                                    「社内ポータルサイトの開発では、複雑な業務フローを理解し、シンプルで使いやすいインターフェースに落とし込む作業が最大の課題でした。ユーザーインタビューを重ね、実際の業務に即したシステムを構築できました。」
-                                </p>
-                                <p class="text-right text-gray-600 mt-2">- プロジェクト担当 2020年</p>
-                            </div>
-                            <div class="slider-comment hidden bg-[#f0f2f5] p-4 rounded-lg">
-                                <p class="text-gray-700 italic">
-                                    「観光情報サイトでは、地域の魅力を最大限に引き出すビジュアルデザインと、訪問者が必要な情報にすぐにアクセスできる導線設計を心がけました。多言語対応も実装し、海外からの観光客増加にも貢献しています。」
-                                </p>
-                                <p class="text-right text-gray-600 mt-2">- プロジェクト担当 2019年</p>
-                            </div>
-                            <div class="slider-comment hidden bg-[#f0f2f5] p-4 rounded-lg">
-                                <p class="text-gray-700 italic">
-                                    「オンライン学習プラットフォームの開発では、教育効果を高めるための機能設計に注力しました。特に進捗管理とフィードバック機能は、学習者のモチベーション維持に大きく貢献しています。」
-                                </p>
-                                <p class="text-right text-gray-600 mt-2">- プロジェクト担当 2022年</p>
-                            </div>
+                            <button class="slider-dot w-3 h-3 rounded-full bg-[#3e3a3a] opacity-40"
+                                data-index="4"></button>
                         </div>
                     </div>
                 </div>
 
                 <div class="tab-content" id="tab4">
                     <div class="bg-white rounded-lg shadow-md p-6">
-                        <h4 class="text-xl font-semibold text-gray-800 mb-4">その他のプロジェクト</h4>
                         <!-- スライダーコンテナ -->
                         <div class="slider-container rounded-lg overflow-hidden mb-6">
                             <div class="slider">
                                 <!-- スライド1 -->
                                 <div class="slide">
-                                    <div class="bg-[#f0f2f5] rounded-lg overflow-hidden">
-                                        <div class="h-64 bg-[#3e3a3a] flex items-center justify-center">
-                                            <svg class="w-24 h-24 text-white" fill="currentColor" viewBox="0 0 24 24">
-                                                <path
-                                                    d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z">
-                                                </path>
-                                                <path d="M12 8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z">
-                                                </path>
-                                            </svg>
-                                        </div>
-                                        <div class="p-4">
-                                            <h5 class="font-semibold text-lg mb-2">ECサイトリニューアル</h5>
-                                            <p class="text-gray-600">大手アパレルブランドのECサイトをリニューアル。売上が前年比30%増加。</p>
+                                    <div
+                                        class="bg-[#f0f2f5] rounded-lg overflow-hidden mx-auto w-full max-w-md md:max-w-2xl">
+                                        <div class="aspect-[3/2] w-full overflow-hidden bg-[#3e3a3a]">
+                                            <img src="反省少女_000.png" class="w-full h-full object-cover" />
                                         </div>
                                     </div>
                                 </div>
 
                                 <!-- スライド2 -->
                                 <div class="slide">
-                                    <div class="bg-[#f0f2f5] rounded-lg overflow-hidden">
-                                        <div class="h-64 bg-[#4a6fa5] flex items-center justify-center">
-                                            <svg class="w-24 h-24 text-white" fill="currentColor" viewBox="0 0 24 24">
-                                                <path
-                                                    d="M21 2H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h7v2H8v2h8v-2h-2v-2h7c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H3V4h18v12z">
-                                                </path>
-                                            </svg>
+                                    <div
+                                        class="bg-[#f0f2f5] rounded-lg overflow-hidden mx-auto w-full max-w-md md:max-w-2xl">
+                                        <div class="aspect-[3/2] w-full overflow-hidden bg-[#3e3a3a]">
+                                            <img src="反省少女_001.png" class="w-full h-full object-cover" />
                                         </div>
+
                                         <div class="p-4">
-                                            <h5 class="font-semibold text-lg mb-2">企業ポータルサイト</h5>
-                                            <p class="text-gray-600">大手製造業の社内ポータルサイトを開発。業務効率が20%向上。</p>
+                                            <h5 class="font-semibold text-lg mb-2">祝再就職！</h5>
+                                            <p class="text-gray-600">夢のITエンジニアライフが始まる</p>
                                         </div>
                                     </div>
                                 </div>
 
                                 <!-- スライド3 -->
                                 <div class="slide">
-                                    <div class="bg-[#f0f2f5] rounded-lg overflow-hidden">
-                                        <div class="h-64 bg-[#6b8e23] flex items-center justify-center">
-                                            <svg class="w-24 h-24 text-white" fill="currentColor" viewBox="0 0 24 24">
-                                                <path
-                                                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z">
-                                                </path>
-                                            </svg>
+                                    <div
+                                        class="bg-[#f0f2f5] rounded-lg overflow-hidden mx-auto w-full max-w-md md:max-w-2xl">
+                                        <div class="aspect-[3/2] w-full overflow-hidden bg-[#3e3a3a]">
+                                            <img src="反省少女_002.png" class="w-full h-full object-cover" />
                                         </div>
+
                                         <div class="p-4">
-                                            <h5 class="font-semibold text-lg mb-2">観光情報ウェブサイト</h5>
-                                            <p class="text-gray-600">地方自治体の観光情報サイトを開発。訪問者数が2倍に増加。</p>
+                                            <h5 class="font-semibold text-lg mb-2">Java楽しい！</h5>
+                                            <p class="text-gray-600">プログラミングの才能(?)があり、足早に研修を進める</p>
                                         </div>
                                     </div>
                                 </div>
 
                                 <!-- スライド4 -->
                                 <div class="slide">
-                                    <div class="bg-[#f0f2f5] rounded-lg overflow-hidden">
-                                        <div class="h-64 bg-[#8a2be2] flex items-center justify-center">
-                                            <svg class="w-24 h-24 text-white" fill="currentColor" viewBox="0 0 24 24">
-                                                <path
-                                                    d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-5 14H4v-4h11v4zm0-5H4V9h11v4zm5 5h-4V9h4v9z">
-                                                </path>
-                                            </svg>
+                                    <div
+                                        class="bg-[#f0f2f5] rounded-lg overflow-hidden mx-auto w-full max-w-md md:max-w-2xl">
+                                        <div class="aspect-[3/2] w-full overflow-hidden bg-[#3e3a3a]">
+                                            <img src="反省少女_003.png" class="w-full h-full object-cover" />
                                         </div>
+
                                         <div class="p-4">
-                                            <h5 class="font-semibold text-lg mb-2">オンライン学習プラットフォーム</h5>
-                                            <p class="text-gray-600">教育機関向けのオンライン学習プラットフォームを開発。5000人以上のユーザーが利用。</p>
+                                            <h5 class="font-semibold text-lg mb-2">膀胱炎！</h5>
+                                            <p class="text-gray-600">ある日、膀胱炎にかかり、通院のため欠勤してしまうことに…</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- スライド5 -->
+                                <div class="slide">
+                                    <div
+                                        class="bg-[#f0f2f5] rounded-lg overflow-hidden mx-auto w-full max-w-md md:max-w-2xl">
+                                        <div class="aspect-[3/2] w-full overflow-hidden bg-[#3e3a3a]">
+                                            <img src="反省少女_004.png" class="w-full h-full object-cover" />
+                                        </div>
+
+                                        <div class="p-4">
+                                            <h5 class="font-semibold text-lg mb-2">反省！</h5>
+                                            <p class="text-gray-600">反省文を書けと言われたので退職届を書いてみた</p>
                                         </div>
                                     </div>
                                 </div>
@@ -1951,34 +1896,122 @@
                                 data-index="2"></button>
                             <button class="slider-dot w-3 h-3 rounded-full bg-[#3e3a3a] opacity-40"
                                 data-index="3"></button>
+                            <button class="slider-dot w-3 h-3 rounded-full bg-[#3e3a3a] opacity-40"
+                                data-index="4"></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="tab5">
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <!-- スライダーコンテナ -->
+                        <div class="slider-container rounded-lg overflow-hidden mb-6">
+                            <div class="slider">
+                                <!-- スライド1 -->
+                                <div class="slide">
+                                    <div
+                                        class="bg-[#f0f2f5] rounded-lg overflow-hidden mx-auto w-full max-w-md md:max-w-2xl">
+                                        <div class="aspect-[3/2] w-full overflow-hidden bg-[#3e3a3a]">
+                                            <img src="逃亡少女_000.png" class="w-full h-full object-cover" />
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <!-- スライド2 -->
+                                <div class="slide">
+                                    <div
+                                        class="bg-[#f0f2f5] rounded-lg overflow-hidden mx-auto w-full max-w-md md:max-w-2xl">
+                                        <div class="aspect-[3/2] w-full overflow-hidden bg-[#3e3a3a]">
+                                            <img src="逃亡少女_001.png" class="w-full h-full object-cover" />
+                                        </div>
+
+                                        <div class="p-4">
+                                            <h5 class="font-semibold text-lg mb-2">祝再々就職！</h5>
+                                            <p class="text-gray-600">夢のITエンジニアライフが再始動する</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- スライド3 -->
+                                <div class="slide">
+                                    <div
+                                        class="bg-[#f0f2f5] rounded-lg overflow-hidden mx-auto w-full max-w-md md:max-w-2xl">
+                                        <div class="aspect-[3/2] w-full overflow-hidden bg-[#3e3a3a]">
+                                            <img src="逃亡少女_002.png" class="w-full h-full object-cover" />
+                                        </div>
+
+                                        <div class="p-4">
+                                            <h5 class="font-semibold text-lg mb-2">飲み会！</h5>
+                                            <p class="text-gray-600">お客様との飲み会に参加することになる</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- スライド4 -->
+                                <div class="slide">
+                                    <div
+                                        class="bg-[#f0f2f5] rounded-lg overflow-hidden mx-auto w-full max-w-md md:max-w-2xl">
+                                        <div class="aspect-[3/2] w-full overflow-hidden bg-[#3e3a3a]">
+                                            <img src="逃亡少女_003.png" class="w-full h-full object-cover" />
+                                        </div>
+
+                                        <div class="p-4">
+                                            <h5 class="font-semibold text-lg mb-2">2件目で事件！</h5>
+                                            <p class="text-gray-600">2件目のカラオケ屋さんでセクハラ発言を聞かされる</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- スライド5 -->
+                                <div class="slide">
+                                    <div
+                                        class="bg-[#f0f2f5] rounded-lg overflow-hidden mx-auto w-full max-w-md md:max-w-2xl">
+                                        <div class="aspect-[3/2] w-full overflow-hidden bg-[#3e3a3a]">
+                                            <img src="逃亡少女_004.png" class="w-full h-full object-cover" />
+                                        </div>
+
+                                        <div class="p-4">
+                                            <h5 class="font-semibold text-lg mb-2">逃亡！</h5>
+                                            <p class="text-gray-600">カラオケから逃亡し、後日退職</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- スライダーコントロール -->
+                            <div class="flex justify-between absolute top-1/2 transform -translate-y-1/2 w-full px-4">
+                                <button
+                                    class="slider-prev bg-white/70 hover:bg-white rounded-full w-10 h-10 flex items-center justify-center shadow-md focus:outline-none">
+                                    <svg class="w-6 h-6 text-[#3e3a3a]" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M15 19l-7-7 7-7"></path>
+                                    </svg>
+                                </button>
+                                <button
+                                    class="slider-next bg-white/70 hover:bg-white rounded-full w-10 h-10 flex items-center justify-center shadow-md focus:outline-none">
+                                    <svg class="w-6 h-6 text-[#3e3a3a]" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 5l7 7-7 7"></path>
+                                    </svg>
+                                </button>
+                            </div>
                         </div>
 
-                        <!-- スライダーコメント -->
-                        <div class="slider-comments">
-                            <div class="slider-comment active bg-[#f0f2f5] p-4 rounded-lg">
-                                <p class="text-gray-700 italic">
-                                    「このECサイトのリニューアルプロジェクトでは、ユーザー体験を最優先に考え、モバイルファーストのアプローチで設計しました。結果として、コンバージョン率が大幅に向上し、クライアントからも高い評価をいただきました。」
-                                </p>
-                                <p class="text-right text-gray-600 mt-2">- プロジェクト担当 2021年</p>
-                            </div>
-                            <div class="slider-comment hidden bg-[#f0f2f5] p-4 rounded-lg">
-                                <p class="text-gray-700 italic">
-                                    「社内ポータルサイトの開発では、複雑な業務フローを理解し、シンプルで使いやすいインターフェースに落とし込む作業が最大の課題でした。ユーザーインタビューを重ね、実際の業務に即したシステムを構築できました。」
-                                </p>
-                                <p class="text-right text-gray-600 mt-2">- プロジェクト担当 2020年</p>
-                            </div>
-                            <div class="slider-comment hidden bg-[#f0f2f5] p-4 rounded-lg">
-                                <p class="text-gray-700 italic">
-                                    「観光情報サイトでは、地域の魅力を最大限に引き出すビジュアルデザインと、訪問者が必要な情報にすぐにアクセスできる導線設計を心がけました。多言語対応も実装し、海外からの観光客増加にも貢献しています。」
-                                </p>
-                                <p class="text-right text-gray-600 mt-2">- プロジェクト担当 2019年</p>
-                            </div>
-                            <div class="slider-comment hidden bg-[#f0f2f5] p-4 rounded-lg">
-                                <p class="text-gray-700 italic">
-                                    「オンライン学習プラットフォームの開発では、教育効果を高めるための機能設計に注力しました。特に進捗管理とフィードバック機能は、学習者のモチベーション維持に大きく貢献しています。」
-                                </p>
-                                <p class="text-right text-gray-600 mt-2">- プロジェクト担当 2022年</p>
-                            </div>
+                        <!-- スライダーインジケーター -->
+                        <div class="flex justify-center space-x-2 mb-4">
+                            <button class="slider-dot w-3 h-3 rounded-full bg-[#3e3a3a] opacity-100"
+                                data-index="0"></button>
+                            <button class="slider-dot w-3 h-3 rounded-full bg-[#3e3a3a] opacity-40"
+                                data-index="1"></button>
+                            <button class="slider-dot w-3 h-3 rounded-full bg-[#3e3a3a] opacity-40"
+                                data-index="2"></button>
+                            <button class="slider-dot w-3 h-3 rounded-full bg-[#3e3a3a] opacity-40"
+                                data-index="3"></button>
+                            <button class="slider-dot w-3 h-3 rounded-full bg-[#3e3a3a] opacity-40"
+                                data-index="4"></button>
                         </div>
                     </div>
                 </div>
@@ -1999,7 +2032,7 @@
                 <!-- スキルカード1 -->
                 <div
                     class="bg-[#e6e5ef] rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300 transform hover:-translate-y-1">
-                    <div class="w-14 h-14 bg-[#ced7dc] rounded-lg flex items-center justify-center mb-4">
+                    <div class="w-14 h-14 bg-white rounded-lg flex items-center justify-center mb-4">
                         <svg class="w-8 h-8 text-[#3e3a3a]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
@@ -2041,7 +2074,7 @@
                 <!-- スキルカード2 -->
                 <div
                     class="bg-[#e6e5ef] rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300 transform hover:-translate-y-1">
-                    <div class="w-14 h-14 bg-[#ced7dc] rounded-lg flex items-center justify-center mb-4">
+                    <div class="w-14 h-14 bg-white rounded-lg flex items-center justify-center mb-4">
                         <svg class="w-8 h-8 text-[#3e3a3a]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4">
@@ -2084,7 +2117,7 @@
                 <!-- スキルカード3 -->
                 <div
                     class="bg-[#e6e5ef] rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300 transform hover:-translate-y-1">
-                    <div class="w-14 h-14 bg-[#ced7dc] rounded-lg flex items-center justify-center mb-4">
+                    <div class="w-14 h-14 bg-white rounded-lg flex items-center justify-center mb-4">
                         <svg class="w-8 h-8 text-[#3e3a3a]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01">
