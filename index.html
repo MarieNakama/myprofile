@@ -1,0 +1,1760 @@
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自己紹介 | プロフィールサイト</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&amp;display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            background-color: #e6e5ef;
+            /* BASE色 */
+        }
+
+        .hero-pattern {
+            background-color: #3e3a3a;
+            /* ACCENT色 */
+            background-image: radial-gradient(circle at 25px 25px, rgba(255, 255, 255, 0.2) 2%, transparent 0%),
+                radial-gradient(circle at 75px 75px, rgba(255, 255, 255, 0.2) 2%, transparent 0%);
+            background-size: 100px 100px;
+        }
+
+        .section-transition {
+            clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%);
+        }
+
+        .accent-color {
+            color: #3e3a3a;
+            /* ACCENT色 */
+        }
+
+        .accent-bg {
+            background-color: #3e3a3a;
+            /* ACCENT色 */
+        }
+
+        .sub-color {
+            color: #ced7dc;
+            /* SUB色 */
+        }
+
+        .sub-bg {
+            background-color: #ced7dc;
+            /* SUB色 */
+        }
+
+        .base-bg {
+            background-color: #e6e5ef;
+            /* BASE色 */
+        }
+
+        .accent-border {
+            border-color: #3e3a3a;
+            /* ACCENT色 */
+        }
+
+        .sub-border {
+            border-color: #ced7dc;
+            /* SUB色 */
+        }
+    </style>
+    <style>
+        *,
+        ::before,
+        ::after {
+            --tw-border-spacing-x: 0;
+            --tw-border-spacing-y: 0;
+            --tw-translate-x: 0;
+            --tw-translate-y: 0;
+            --tw-rotate: 0;
+            --tw-skew-x: 0;
+            --tw-skew-y: 0;
+            --tw-scale-x: 1;
+            --tw-scale-y: 1;
+            --tw-pan-x: ;
+            --tw-pan-y: ;
+            --tw-pinch-zoom: ;
+            --tw-scroll-snap-strictness: proximity;
+            --tw-gradient-from-position: ;
+            --tw-gradient-via-position: ;
+            --tw-gradient-to-position: ;
+            --tw-ordinal: ;
+            --tw-slashed-zero: ;
+            --tw-numeric-figure: ;
+            --tw-numeric-spacing: ;
+            --tw-numeric-fraction: ;
+            --tw-ring-inset: ;
+            --tw-ring-offset-width: 0px;
+            --tw-ring-offset-color: #fff;
+            --tw-ring-color: rgb(59 130 246 / 0.5);
+            --tw-ring-offset-shadow: 0 0 #0000;
+            --tw-ring-shadow: 0 0 #0000;
+            --tw-shadow: 0 0 #0000;
+            --tw-shadow-colored: 0 0 #0000;
+            --tw-blur: ;
+            --tw-brightness: ;
+            --tw-contrast: ;
+            --tw-grayscale: ;
+            --tw-hue-rotate: ;
+            --tw-invert: ;
+            --tw-saturate: ;
+            --tw-sepia: ;
+            --tw-drop-shadow: ;
+            --tw-backdrop-blur: ;
+            --tw-backdrop-brightness: ;
+            --tw-backdrop-contrast: ;
+            --tw-backdrop-grayscale: ;
+            --tw-backdrop-hue-rotate: ;
+            --tw-backdrop-invert: ;
+            --tw-backdrop-opacity: ;
+            --tw-backdrop-saturate: ;
+            --tw-backdrop-sepia: ;
+            --tw-contain-size: ;
+            --tw-contain-layout: ;
+            --tw-contain-paint: ;
+            --tw-contain-style:
+        }
+
+        ::backdrop {
+            --tw-border-spacing-x: 0;
+            --tw-border-spacing-y: 0;
+            --tw-translate-x: 0;
+            --tw-translate-y: 0;
+            --tw-rotate: 0;
+            --tw-skew-x: 0;
+            --tw-skew-y: 0;
+            --tw-scale-x: 1;
+            --tw-scale-y: 1;
+            --tw-pan-x: ;
+            --tw-pan-y: ;
+            --tw-pinch-zoom: ;
+            --tw-scroll-snap-strictness: proximity;
+            --tw-gradient-from-position: ;
+            --tw-gradient-via-position: ;
+            --tw-gradient-to-position: ;
+            --tw-ordinal: ;
+            --tw-slashed-zero: ;
+            --tw-numeric-figure: ;
+            --tw-numeric-spacing: ;
+            --tw-numeric-fraction: ;
+            --tw-ring-inset: ;
+            --tw-ring-offset-width: 0px;
+            --tw-ring-offset-color: #fff;
+            --tw-ring-color: rgb(59 130 246 / 0.5);
+            --tw-ring-offset-shadow: 0 0 #0000;
+            --tw-ring-shadow: 0 0 #0000;
+            --tw-shadow: 0 0 #0000;
+            --tw-shadow-colored: 0 0 #0000;
+            --tw-blur: ;
+            --tw-brightness: ;
+            --tw-contrast: ;
+            --tw-grayscale: ;
+            --tw-hue-rotate: ;
+            --tw-invert: ;
+            --tw-saturate: ;
+            --tw-sepia: ;
+            --tw-drop-shadow: ;
+            --tw-backdrop-blur: ;
+            --tw-backdrop-brightness: ;
+            --tw-backdrop-contrast: ;
+            --tw-backdrop-grayscale: ;
+            --tw-backdrop-hue-rotate: ;
+            --tw-backdrop-invert: ;
+            --tw-backdrop-opacity: ;
+            --tw-backdrop-saturate: ;
+            --tw-backdrop-sepia: ;
+            --tw-contain-size: ;
+            --tw-contain-layout: ;
+            --tw-contain-paint: ;
+            --tw-contain-style:
+        }
+
+        /* ! tailwindcss v3.4.16 | MIT License | https://tailwindcss.com */
+        *,
+        ::after,
+        ::before {
+            box-sizing: border-box;
+            border-width: 0;
+            border-style: solid;
+            border-color: #e5e7eb
+        }
+
+        ::after,
+        ::before {
+            --tw-content: ''
+        }
+
+        :host,
+        html {
+            line-height: 1.5;
+            -webkit-text-size-adjust: 100%;
+            -moz-tab-size: 4;
+            tab-size: 4;
+            font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            font-feature-settings: normal;
+            font-variation-settings: normal;
+            -webkit-tap-highlight-color: transparent
+        }
+
+        body {
+            margin: 0;
+            line-height: inherit
+        }
+
+        hr {
+            height: 0;
+            color: inherit;
+            border-top-width: 1px
+        }
+
+        abbr:where([title]) {
+            -webkit-text-decoration: underline dotted;
+            text-decoration: underline dotted
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-size: inherit;
+            font-weight: inherit
+        }
+
+        a {
+            color: inherit;
+            text-decoration: inherit
+        }
+
+        b,
+        strong {
+            font-weight: bolder
+        }
+
+        code,
+        kbd,
+        pre,
+        samp {
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+            font-feature-settings: normal;
+            font-variation-settings: normal;
+            font-size: 1em
+        }
+
+        small {
+            font-size: 80%
+        }
+
+        sub,
+        sup {
+            font-size: 75%;
+            line-height: 0;
+            position: relative;
+            vertical-align: baseline
+        }
+
+        sub {
+            bottom: -.25em
+        }
+
+        sup {
+            top: -.5em
+        }
+
+        table {
+            text-indent: 0;
+            border-color: inherit;
+            border-collapse: collapse
+        }
+
+        button,
+        input,
+        optgroup,
+        select,
+        textarea {
+            font-family: inherit;
+            font-feature-settings: inherit;
+            font-variation-settings: inherit;
+            font-size: 100%;
+            font-weight: inherit;
+            line-height: inherit;
+            letter-spacing: inherit;
+            color: inherit;
+            margin: 0;
+            padding: 0
+        }
+
+        button,
+        select {
+            text-transform: none
+        }
+
+        button,
+        input:where([type=button]),
+        input:where([type=reset]),
+        input:where([type=submit]) {
+            -webkit-appearance: button;
+            background-color: transparent;
+            background-image: none
+        }
+
+        :-moz-focusring {
+            outline: auto
+        }
+
+        :-moz-ui-invalid {
+            box-shadow: none
+        }
+
+        progress {
+            vertical-align: baseline
+        }
+
+        ::-webkit-inner-spin-button,
+        ::-webkit-outer-spin-button {
+            height: auto
+        }
+
+        [type=search] {
+            -webkit-appearance: textfield;
+            outline-offset: -2px
+        }
+
+        ::-webkit-search-decoration {
+            -webkit-appearance: none
+        }
+
+        ::-webkit-file-upload-button {
+            -webkit-appearance: button;
+            font: inherit
+        }
+
+        summary {
+            display: list-item
+        }
+
+        blockquote,
+        dd,
+        dl,
+        figure,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        hr,
+        p,
+        pre {
+            margin: 0
+        }
+
+        fieldset {
+            margin: 0;
+            padding: 0
+        }
+
+        legend {
+            padding: 0
+        }
+
+        menu,
+        ol,
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0
+        }
+
+        dialog {
+            padding: 0
+        }
+
+        textarea {
+            resize: vertical
+        }
+
+        input::placeholder,
+        textarea::placeholder {
+            opacity: 1;
+            color: #9ca3af
+        }
+
+        [role=button],
+        button {
+            cursor: pointer
+        }
+
+        :disabled {
+            cursor: default
+        }
+
+        audio,
+        canvas,
+        embed,
+        iframe,
+        img,
+        object,
+        svg,
+        video {
+            display: block;
+            vertical-align: middle
+        }
+
+        img,
+        video {
+            max-width: 100%;
+            height: auto
+        }
+
+        [hidden]:where(:not([hidden=until-found])) {
+            display: none
+        }
+
+        .fixed {
+            position: fixed
+        }
+
+        .absolute {
+            position: absolute
+        }
+
+        .relative {
+            position: relative
+        }
+
+        .inset-0 {
+            inset: 0px
+        }
+
+        .-left-2 {
+            left: -0.5rem
+        }
+
+        .top-0 {
+            top: 0px
+        }
+
+        .z-10 {
+            z-index: 10
+        }
+
+        .order-1 {
+            order: 1
+        }
+
+        .order-2 {
+            order: 2
+        }
+
+        .mx-auto {
+            margin-left: auto;
+            margin-right: auto
+        }
+
+        .mb-1 {
+            margin-bottom: 0.25rem
+        }
+
+        .mb-12 {
+            margin-bottom: 3rem
+        }
+
+        .mb-2 {
+            margin-bottom: 0.5rem
+        }
+
+        .mb-3 {
+            margin-bottom: 0.75rem
+        }
+
+        .mb-4 {
+            margin-bottom: 1rem
+        }
+
+        .mb-6 {
+            margin-bottom: 1.5rem
+        }
+
+        .ml-16 {
+            margin-left: 4rem
+        }
+
+        .mr-2 {
+            margin-right: 0.5rem
+        }
+
+        .mr-4 {
+            margin-right: 1rem
+        }
+
+        .mt-2 {
+            margin-top: 0.5rem
+        }
+
+        .mt-3 {
+            margin-top: 0.75rem
+        }
+
+        .mt-8 {
+            margin-top: 2rem
+        }
+
+        .block {
+            display: block
+        }
+
+        .inline-block {
+            display: inline-block
+        }
+
+        .flex {
+            display: flex
+        }
+
+        .grid {
+            display: grid
+        }
+
+        .hidden {
+            display: none
+        }
+
+        .h-1 {
+            height: 0.25rem
+        }
+
+        .h-12 {
+            height: 3rem
+        }
+
+        .h-14 {
+            height: 3.5rem
+        }
+
+        .h-2 {
+            height: 0.5rem
+        }
+
+        .h-32 {
+            height: 8rem
+        }
+
+        .h-4 {
+            height: 1rem
+        }
+
+        .h-40 {
+            height: 10rem
+        }
+
+        .h-5 {
+            height: 1.25rem
+        }
+
+        .h-6 {
+            height: 1.5rem
+        }
+
+        .h-64 {
+            height: 16rem
+        }
+
+        .h-8 {
+            height: 2rem
+        }
+
+        .h-full {
+            height: 100%
+        }
+
+        .w-12 {
+            width: 3rem
+        }
+
+        .w-14 {
+            width: 3.5rem
+        }
+
+        .w-20 {
+            width: 5rem
+        }
+
+        .w-32 {
+            width: 8rem
+        }
+
+        .w-4 {
+            width: 1rem
+        }
+
+        .w-40 {
+            width: 10rem
+        }
+
+        .w-5 {
+            width: 1.25rem
+        }
+
+        .w-6 {
+            width: 1.5rem
+        }
+
+        .w-64 {
+            width: 16rem
+        }
+
+        .w-8 {
+            width: 2rem
+        }
+
+        .w-full {
+            width: 100%
+        }
+
+        .max-w-2xl {
+            max-width: 42rem
+        }
+
+        .max-w-6xl {
+            max-width: 72rem
+        }
+
+        .max-w-lg {
+            max-width: 32rem
+        }
+
+        .transform {
+            transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+        }
+
+        .grid-cols-1 {
+            grid-template-columns: repeat(1, minmax(0, 1fr))
+        }
+
+        .grid-cols-2 {
+            grid-template-columns: repeat(2, minmax(0, 1fr))
+        }
+
+        .flex-col {
+            flex-direction: column
+        }
+
+        .flex-wrap {
+            flex-wrap: wrap
+        }
+
+        .items-center {
+            align-items: center
+        }
+
+        .justify-center {
+            justify-content: center
+        }
+
+        .justify-between {
+            justify-content: space-between
+        }
+
+        .gap-12 {
+            gap: 3rem
+        }
+
+        .gap-4 {
+            gap: 1rem
+        }
+
+        .gap-6 {
+            gap: 1.5rem
+        }
+
+        .gap-8 {
+            gap: 2rem
+        }
+
+        .space-x-1> :not([hidden])~ :not([hidden]) {
+            --tw-space-x-reverse: 0;
+            margin-right: calc(0.25rem * var(--tw-space-x-reverse));
+            margin-left: calc(0.25rem * calc(1 - var(--tw-space-x-reverse)))
+        }
+
+        .space-x-4> :not([hidden])~ :not([hidden]) {
+            --tw-space-x-reverse: 0;
+            margin-right: calc(1rem * var(--tw-space-x-reverse));
+            margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)))
+        }
+
+        .space-y-3> :not([hidden])~ :not([hidden]) {
+            --tw-space-y-reverse: 0;
+            margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
+            margin-bottom: calc(0.75rem * var(--tw-space-y-reverse))
+        }
+
+        .space-y-8> :not([hidden])~ :not([hidden]) {
+            --tw-space-y-reverse: 0;
+            margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
+            margin-bottom: calc(2rem * var(--tw-space-y-reverse))
+        }
+
+        .overflow-hidden {
+            overflow: hidden
+        }
+
+        .rounded {
+            border-radius: 0.25rem
+        }
+
+        .rounded-full {
+            border-radius: 9999px
+        }
+
+        .rounded-lg {
+            border-radius: 0.5rem
+        }
+
+        .rounded-xl {
+            border-radius: 0.75rem
+        }
+
+        .border {
+            border-width: 1px
+        }
+
+        .border-4 {
+            border-width: 4px
+        }
+
+        .border-l-2 {
+            border-left-width: 2px
+        }
+
+        .border-t {
+            border-top-width: 1px
+        }
+
+        .border-\[\#3e3a3a\] {
+            --tw-border-opacity: 1;
+            border-color: rgb(62 58 58 / var(--tw-border-opacity, 1))
+        }
+
+        .border-\[\#ced7dc\] {
+            --tw-border-opacity: 1;
+            border-color: rgb(206 215 220 / var(--tw-border-opacity, 1))
+        }
+
+        .border-gray-700 {
+            --tw-border-opacity: 1;
+            border-color: rgb(55 65 81 / var(--tw-border-opacity, 1))
+        }
+
+        .border-white {
+            --tw-border-opacity: 1;
+            border-color: rgb(255 255 255 / var(--tw-border-opacity, 1))
+        }
+
+        .bg-\[\#3e3a3a\] {
+            --tw-bg-opacity: 1;
+            background-color: rgb(62 58 58 / var(--tw-bg-opacity, 1))
+        }
+
+        .bg-\[\#ced7dc\] {
+            --tw-bg-opacity: 1;
+            background-color: rgb(206 215 220 / var(--tw-bg-opacity, 1))
+        }
+
+        .bg-\[\#e6e5ef\] {
+            --tw-bg-opacity: 1;
+            background-color: rgb(230 229 239 / var(--tw-bg-opacity, 1))
+        }
+
+        .bg-gray-200 {
+            --tw-bg-opacity: 1;
+            background-color: rgb(229 231 235 / var(--tw-bg-opacity, 1))
+        }
+
+        .bg-white {
+            --tw-bg-opacity: 1;
+            background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1))
+        }
+
+        .bg-white\/90 {
+            background-color: rgb(255 255 255 / 0.9)
+        }
+
+        .p-2 {
+            padding: 0.5rem
+        }
+
+        .p-5 {
+            padding: 1.25rem
+        }
+
+        .p-6 {
+            padding: 1.5rem
+        }
+
+        .p-8 {
+            padding: 2rem
+        }
+
+        .px-2 {
+            padding-left: 0.5rem;
+            padding-right: 0.5rem
+        }
+
+        .px-3 {
+            padding-left: 0.75rem;
+            padding-right: 0.75rem
+        }
+
+        .px-4 {
+            padding-left: 1rem;
+            padding-right: 1rem
+        }
+
+        .px-6 {
+            padding-left: 1.5rem;
+            padding-right: 1.5rem
+        }
+
+        .py-1 {
+            padding-top: 0.25rem;
+            padding-bottom: 0.25rem
+        }
+
+        .py-16 {
+            padding-top: 4rem;
+            padding-bottom: 4rem
+        }
+
+        .py-2 {
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem
+        }
+
+        .py-4 {
+            padding-top: 1rem;
+            padding-bottom: 1rem
+        }
+
+        .py-8 {
+            padding-top: 2rem;
+            padding-bottom: 2rem
+        }
+
+        .pb-20 {
+            padding-bottom: 5rem
+        }
+
+        .pl-8 {
+            padding-left: 2rem
+        }
+
+        .pt-28 {
+            padding-top: 7rem
+        }
+
+        .pt-6 {
+            padding-top: 1.5rem
+        }
+
+        .text-center {
+            text-align: center
+        }
+
+        .text-2xl {
+            font-size: 1.5rem;
+            line-height: 2rem
+        }
+
+        .text-3xl {
+            font-size: 1.875rem;
+            line-height: 2.25rem
+        }
+
+        .text-lg {
+            font-size: 1.125rem;
+            line-height: 1.75rem
+        }
+
+        .text-sm {
+            font-size: 0.875rem;
+            line-height: 1.25rem
+        }
+
+        .text-xl {
+            font-size: 1.25rem;
+            line-height: 1.75rem
+        }
+
+        .text-xs {
+            font-size: 0.75rem;
+            line-height: 1rem
+        }
+
+        .font-bold {
+            font-weight: 700
+        }
+
+        .font-medium {
+            font-weight: 500
+        }
+
+        .font-semibold {
+            font-weight: 600
+        }
+
+        .text-\[\#3e3a3a\] {
+            --tw-text-opacity: 1;
+            color: rgb(62 58 58 / var(--tw-text-opacity, 1))
+        }
+
+        .text-\[\#3e3a3a\]\/30 {
+            color: rgb(62 58 58 / 0.3)
+        }
+
+        .text-\[\#ced7dc\] {
+            --tw-text-opacity: 1;
+            color: rgb(206 215 220 / var(--tw-text-opacity, 1))
+        }
+
+        .text-gray-400 {
+            --tw-text-opacity: 1;
+            color: rgb(156 163 175 / var(--tw-text-opacity, 1))
+        }
+
+        .text-gray-500 {
+            --tw-text-opacity: 1;
+            color: rgb(107 114 128 / var(--tw-text-opacity, 1))
+        }
+
+        .text-gray-600 {
+            --tw-text-opacity: 1;
+            color: rgb(75 85 99 / var(--tw-text-opacity, 1))
+        }
+
+        .text-gray-700 {
+            --tw-text-opacity: 1;
+            color: rgb(55 65 81 / var(--tw-text-opacity, 1))
+        }
+
+        .text-gray-800 {
+            --tw-text-opacity: 1;
+            color: rgb(31 41 55 / var(--tw-text-opacity, 1))
+        }
+
+        .text-white {
+            --tw-text-opacity: 1;
+            color: rgb(255 255 255 / var(--tw-text-opacity, 1))
+        }
+
+        .opacity-20 {
+            opacity: 0.2
+        }
+
+        .shadow-lg {
+            --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+            --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+            box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
+        }
+
+        .shadow-md {
+            --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+            box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
+        }
+
+        .shadow-sm {
+            --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+            --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+            box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
+        }
+
+        .backdrop-blur-sm {
+            --tw-backdrop-blur: blur(4px);
+            -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+            backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)
+        }
+
+        .transition {
+            transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+            transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+            transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-duration: 150ms
+        }
+
+        .duration-300 {
+            transition-duration: 300ms
+        }
+
+        .hover\:-translate-y-1:hover {
+            --tw-translate-y: -0.25rem;
+            transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+        }
+
+        .hover\:bg-\[\#2a2727\]:hover {
+            --tw-bg-opacity: 1;
+            background-color: rgb(42 39 39 / var(--tw-bg-opacity, 1))
+        }
+
+        .hover\:bg-\[\#e6e5ef\]:hover {
+            --tw-bg-opacity: 1;
+            background-color: rgb(230 229 239 / var(--tw-bg-opacity, 1))
+        }
+
+        .hover\:bg-gray-100:hover {
+            --tw-bg-opacity: 1;
+            background-color: rgb(243 244 246 / var(--tw-bg-opacity, 1))
+        }
+
+        .hover\:text-\[\#2a2727\]:hover {
+            --tw-text-opacity: 1;
+            color: rgb(42 39 39 / var(--tw-text-opacity, 1))
+        }
+
+        .hover\:text-\[\#3e3a3a\]:hover {
+            --tw-text-opacity: 1;
+            color: rgb(62 58 58 / var(--tw-text-opacity, 1))
+        }
+
+        .hover\:text-white:hover {
+            --tw-text-opacity: 1;
+            color: rgb(255 255 255 / var(--tw-text-opacity, 1))
+        }
+
+        .hover\:shadow-lg:hover {
+            --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+            --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+            box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
+        }
+
+        .hover\:shadow-md:hover {
+            --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+            box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
+        }
+
+        .focus\:outline-none:focus {
+            outline: 2px solid transparent;
+            outline-offset: 2px
+        }
+
+        @media (min-width: 640px) {
+            .sm\:px-6 {
+                padding-left: 1.5rem;
+                padding-right: 1.5rem
+            }
+        }
+
+        @media (min-width: 768px) {
+            .md\:order-1 {
+                order: 1
+            }
+
+            .md\:order-2 {
+                order: 2
+            }
+
+            .md\:mb-0 {
+                margin-bottom: 0px
+            }
+
+            .md\:flex {
+                display: flex
+            }
+
+            .md\:hidden {
+                display: none
+            }
+
+            .md\:h-48 {
+                height: 12rem
+            }
+
+            .md\:h-80 {
+                height: 20rem
+            }
+
+            .md\:w-48 {
+                width: 12rem
+            }
+
+            .md\:w-80 {
+                width: 20rem
+            }
+
+            .md\:grid-cols-2 {
+                grid-template-columns: repeat(2, minmax(0, 1fr))
+            }
+
+            .md\:flex-row {
+                flex-direction: row
+            }
+
+            .md\:p-12 {
+                padding: 3rem
+            }
+
+            .md\:pb-24 {
+                padding-bottom: 6rem
+            }
+
+            .md\:pt-36 {
+                padding-top: 9rem
+            }
+
+            .md\:text-4xl {
+                font-size: 2.25rem;
+                line-height: 2.5rem
+            }
+
+            .md\:text-xl {
+                font-size: 1.25rem;
+                line-height: 1.75rem
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .lg\:grid-cols-3 {
+                grid-template-columns: repeat(3, minmax(0, 1fr))
+            }
+
+            .lg\:px-8 {
+                padding-left: 2rem;
+                padding-right: 2rem
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ナビゲーションバー -->
+    <nav class="bg-white shadow-md fixed w-full z-10">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-4">
+                    <div class="flex items-center py-4">
+                        <span class="font-bold text-xl accent-color">マイプロフィール</span>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-1">
+                    <a href="#about"
+                        class="py-4 px-3 text-gray-700 hover:text-[#3e3a3a] transition duration-300">プロフィール</a>
+                    <a href="#experience"
+                        class="py-4 px-3 text-gray-700 hover:text-[#3e3a3a] transition duration-300">経歴</a>
+                    <a href="#skills"
+                        class="py-4 px-3 text-gray-700 hover:text-[#3e3a3a] transition duration-300">スキル</a>
+                    <a href="#certifications"
+                        class="py-4 px-3 text-gray-700 hover:text-[#3e3a3a] transition duration-300">保有資格</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="mobile-menu-button p-2 focus:outline-none">
+                        <svg class="h-6 w-6 text-gray-700" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-menu hidden md:hidden">
+            <a href="#about" class="block py-2 px-4 text-sm hover:bg-[#e6e5ef] hover:text-[#3e3a3a]">プロフィール</a>
+            <a href="#experience" class="block py-2 px-4 text-sm hover:bg-[#e6e5ef] hover:text-[#3e3a3a]">経歴</a>
+            <a href="#skills" class="block py-2 px-4 text-sm hover:bg-[#e6e5ef] hover:text-[#3e3a3a]">スキル</a>
+            <a href="#certifications" class="block py-2 px-4 text-sm hover:bg-[#e6e5ef] hover:text-[#3e3a3a]">保有資格</a>
+        </div>
+    </nav>
+
+    <!-- ヒーローセクション -->
+    <header class="hero-pattern pt-28 pb-20 md:pt-36 md:pb-24">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-8 md:p-12 inline-block">
+                <div class="flex flex-col items-center">
+                    <div class="w-32 h-32 rounded-full overflow-hidden border-4 border-white shadow-lg mb-6">
+                        <svg class="w-full h-full text-[#ced7dc]" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-2">山田 太郎</h1>
+                    <p class="text-lg md:text-xl text-[#3e3a3a] mb-4">ウェブデベロッパー</p>
+                    <p class="text-gray-600 max-w-lg mx-auto">
+                        ウェブ開発とデザインに情熱を持つプロフェッショナルです。使いやすく美しいウェブサイトの制作を得意としています。
+                    </p>
+                    <div class="mt-8 flex flex-wrap justify-center gap-4">
+                        <a href="https://twitter.com/marua_0302" target="_blank"
+                            class="bg-[#3e3a3a] hover:bg-[#2a2727] text-white font-medium py-2 px-6 rounded-full transition duration-300 shadow-md hover:shadow-lg flex items-center">
+                            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723 10.054 10.054 0 01-3.127 1.195 4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z">
+                                </path>
+                            </svg>
+                            フォローする
+                        </a>
+                        <a href="#about"
+                            class="bg-white hover:bg-gray-100 text-[#3e3a3a] font-medium py-2 px-6 rounded-full transition duration-300 shadow-md hover:shadow-lg border border-[#ced7dc]">
+                            詳細を見る
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- プロフィールセクション -->
+    <section id="about" class="py-16 bg-white section-transition">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800">プロフィール</h2>
+                <div class="w-20 h-1 bg-[#3e3a3a] mx-auto mt-2 mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">私についてもっと知ってください</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="order-2 md:order-1">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">はじめまして、山田 太郎です</h3>
+                    <p class="text-gray-600 mb-4">
+                        東京在住のウェブデベロッパーとして、5年以上の経験を持っています。フロントエンド開発を専門とし、
+                        使いやすく美しいユーザーインターフェースの構築に情熱を注いでいます。
+                    </p>
+                    <p class="text-gray-600 mb-6">
+                        大学では情報工学を専攻し、卒業後はIT企業でキャリアをスタートしました。
+                        常に新しい技術を学び、クリエイティブな解決策を見つけることを楽しんでいます。
+                    </p>
+
+                    <div class="grid grid-cols-2 gap-4 mb-6">
+                        <div>
+                            <p class="font-medium text-gray-700">名前:</p>
+                            <p class="text-gray-600">山田 太郎</p>
+                        </div>
+                        <div>
+                            <p class="font-medium text-gray-700">年齢:</p>
+                            <p class="text-gray-600">28歳</p>
+                        </div>
+                        <div>
+                            <p class="font-medium text-gray-700">居住地:</p>
+                            <p class="text-gray-600">東京都</p>
+                        </div>
+                        <div>
+                            <p class="font-medium text-gray-700">メール:</p>
+                            <p class="text-gray-600">yamada@example.com</p>
+                        </div>
+                    </div>
+
+                    <div class="flex space-x-4">
+                        <a href="https://twitter.com/marua_0302" target="_blank"
+                            class="text-[#3e3a3a] hover:text-[#2a2727] transition duration-300">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723 10.054 10.054 0 01-3.127 1.195 4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="order-1 md:order-2 flex justify-center">
+                    <div
+                        class="w-64 h-64 md:w-80 md:h-80 rounded-full bg-[#ced7dc] flex items-center justify-center overflow-hidden relative">
+                        <svg class="w-40 h-40 md:w-48 md:h-48 text-[#3e3a3a]/30" fill="currentColor"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z">
+                            </path>
+                        </svg>
+                        <div class="absolute inset-0 border-4 border-[#3e3a3a] rounded-full opacity-20"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 経歴セクション -->
+    <section id="experience" class="py-16 bg-[#e6e5ef]">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800">経歴</h2>
+                <div class="w-20 h-1 bg-[#3e3a3a] mx-auto mt-2 mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">私の職歴と学歴</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- 学歴 -->
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-6 flex items-center">
+                        <svg class="w-6 h-6 mr-2 text-[#3e3a3a]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
+                            <path
+                                d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z">
+                            </path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222">
+                            </path>
+                        </svg>
+                        学歴
+                    </h3>
+
+                    <div class="space-y-8">
+                        <!-- 学歴1 -->
+                        <div class="relative pl-8 border-l-2 border-[#ced7dc]">
+                            <div class="absolute -left-2 top-0 w-4 h-4 bg-[#3e3a3a] rounded-full"></div>
+                            <div class="bg-white rounded-lg shadow-sm p-5 hover:shadow-md transition duration-300">
+                                <div class="flex flex-wrap justify-between mb-2">
+                                    <h4 class="text-lg font-semibold text-gray-800">情報工学修士</h4>
+                                    <span
+                                        class="text-sm font-medium text-[#3e3a3a] bg-[#ced7dc] px-3 py-1 rounded-full">2015
+                                        - 2017</span>
+                                </div>
+                                <h5 class="text-md text-gray-600 mb-3">東京工科大学大学院</h5>
+                                <p class="text-gray-600">
+                                    ウェブ技術とユーザーインターフェース設計に焦点を当てた研究。
+                                    「モバイルアプリケーションにおけるユーザー体験の最適化」をテーマに修士論文を執筆。
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- 学歴2 -->
+                        <div class="relative pl-8 border-l-2 border-[#ced7dc]">
+                            <div class="absolute -left-2 top-0 w-4 h-4 bg-[#3e3a3a] rounded-full"></div>
+                            <div class="bg-white rounded-lg shadow-sm p-5 hover:shadow-md transition duration-300">
+                                <div class="flex flex-wrap justify-between mb-2">
+                                    <h4 class="text-lg font-semibold text-gray-800">情報工学学士</h4>
+                                    <span
+                                        class="text-sm font-medium text-[#3e3a3a] bg-[#ced7dc] px-3 py-1 rounded-full">2011
+                                        - 2015</span>
+                                </div>
+                                <h5 class="text-md text-gray-600 mb-3">東京工科大学</h5>
+                                <p class="text-gray-600">
+                                    コンピュータサイエンスの基礎とプログラミングを学習。
+                                    学生プロジェクトでウェブアプリケーション開発に携わり、プログラミングコンテストで優勝。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 職歴 -->
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-6 flex items-center">
+                        <svg class="w-6 h-6 mr-2 text-[#3e3a3a]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                            </path>
+                        </svg>
+                        職歴
+                    </h3>
+
+                    <div class="space-y-8">
+                        <!-- 職歴1 -->
+                        <div class="relative pl-8 border-l-2 border-[#ced7dc]">
+                            <div class="absolute -left-2 top-0 w-4 h-4 bg-[#3e3a3a] rounded-full"></div>
+                            <div class="bg-white rounded-lg shadow-sm p-5 hover:shadow-md transition duration-300">
+                                <div class="flex flex-wrap justify-between mb-2">
+                                    <h4 class="text-lg font-semibold text-gray-800">シニアフロントエンドデベロッパー</h4>
+                                    <span
+                                        class="text-sm font-medium text-[#3e3a3a] bg-[#ced7dc] px-3 py-1 rounded-full">2020
+                                        - 現在</span>
+                                </div>
+                                <h5 class="text-md text-gray-600 mb-3">テックイノベーション株式会社</h5>
+                                <p class="text-gray-600">
+                                    大規模なウェブアプリケーションの開発とメンテナンス。チームリーダーとして5人のデベロッパーを指導。
+                                    React、TypeScript、GraphQLを使用したプロジェクトを担当。
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- 職歴2 -->
+                        <div class="relative pl-8 border-l-2 border-[#ced7dc]">
+                            <div class="absolute -left-2 top-0 w-4 h-4 bg-[#3e3a3a] rounded-full"></div>
+                            <div class="bg-white rounded-lg shadow-sm p-5 hover:shadow-md transition duration-300">
+                                <div class="flex flex-wrap justify-between mb-2">
+                                    <h4 class="text-lg font-semibold text-gray-800">ウェブデベロッパー</h4>
+                                    <span
+                                        class="text-sm font-medium text-[#3e3a3a] bg-[#ced7dc] px-3 py-1 rounded-full">2017
+                                        - 2020</span>
+                                </div>
+                                <h5 class="text-md text-gray-600 mb-3">デジタルソリューションズ株式会社</h5>
+                                <p class="text-gray-600">
+                                    企業向けウェブサイトとECサイトの開発。HTML、CSS、JavaScript、PHPを使用したフルスタック開発を担当。
+                                    顧客との直接のコミュニケーションも担当。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- スキルセクション -->
+    <section id="skills" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800">スキル</h2>
+                <div class="w-20 h-1 bg-[#3e3a3a] mx-auto mt-2 mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">私が持つ技術スキルと専門知識</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- スキルカード1 -->
+                <div
+                    class="bg-[#e6e5ef] rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300 transform hover:-translate-y-1">
+                    <div class="w-14 h-14 bg-[#ced7dc] rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-8 h-8 text-[#3e3a3a]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">フロントエンド開発</h3>
+                    <p class="text-gray-600 mb-4">モダンなウェブサイトとアプリケーションの構築</p>
+                    <div class="space-y-3">
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-sm font-medium text-gray-700">HTML/CSS</span>
+                                <span class="text-sm font-medium text-gray-700">95%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-[#3e3a3a] h-2 rounded-full" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-sm font-medium text-gray-700">JavaScript</span>
+                                <span class="text-sm font-medium text-gray-700">90%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-[#3e3a3a] h-2 rounded-full" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-sm font-medium text-gray-700">React</span>
+                                <span class="text-sm font-medium text-gray-700">85%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-[#3e3a3a] h-2 rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- スキルカード2 -->
+                <div
+                    class="bg-[#e6e5ef] rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300 transform hover:-translate-y-1">
+                    <div class="w-14 h-14 bg-[#ced7dc] rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-8 h-8 text-[#3e3a3a]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">バックエンド開発</h3>
+                    <p class="text-gray-600 mb-4">サーバーサイドの開発とデータベース管理</p>
+                    <div class="space-y-3">
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-sm font-medium text-gray-700">Node.js</span>
+                                <span class="text-sm font-medium text-gray-700">80%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-[#3e3a3a] h-2 rounded-full" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-sm font-medium text-gray-700">PHP</span>
+                                <span class="text-sm font-medium text-gray-700">75%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-[#3e3a3a] h-2 rounded-full" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-sm font-medium text-gray-700">MySQL</span>
+                                <span class="text-sm font-medium text-gray-700">85%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-[#3e3a3a] h-2 rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- スキルカード3 -->
+                <div
+                    class="bg-[#e6e5ef] rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300 transform hover:-translate-y-1">
+                    <div class="w-14 h-14 bg-[#ced7dc] rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-8 h-8 text-[#3e3a3a]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">デザイン</h3>
+                    <p class="text-gray-600 mb-4">ユーザー体験とインターフェースデザイン</p>
+                    <div class="space-y-3">
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-sm font-medium text-gray-700">UI/UXデザイン</span>
+                                <span class="text-sm font-medium text-gray-700">85%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-[#3e3a3a] h-2 rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-sm font-medium text-gray-700">Figma</span>
+                                <span class="text-sm font-medium text-gray-700">90%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-[#3e3a3a] h-2 rounded-full" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-sm font-medium text-gray-700">Adobe XD</span>
+                                <span class="text-sm font-medium text-gray-700">80%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-[#3e3a3a] h-2 rounded-full" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 保有資格セクション -->
+    <section id="certifications" class="py-16 bg-[#e6e5ef]">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800">保有資格</h2>
+                <div class="w-20 h-1 bg-[#3e3a3a] mx-auto mt-2 mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">私が取得した専門資格</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- 資格カード1: 作業療法士 -->
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-[#ced7dc] rounded-full flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-[#3e3a3a]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800">作業療法士</h3>
+                    </div>
+                    <div class="ml-16">
+                        <p class="text-gray-600 mb-2">厚生労働省</p>
+                        <p class="text-sm text-gray-500">取得年月: 2016年4月</p>
+                        <div class="mt-3 inline-block bg-[#3e3a3a] text-white text-xs px-2 py-1 rounded">国家資格</div>
+                    </div>
+                </div>
+
+                <!-- 資格カード2: 基本情報技術者 -->
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-[#ced7dc] rounded-full flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-[#3e3a3a]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800">基本情報技術者試験</h3>
+                    </div>
+                    <div class="ml-16">
+                        <p class="text-gray-600 mb-2">情報処理推進機構（IPA）</p>
+                        <p class="text-sm text-gray-500">取得年月: 2018年10月</p>
+                        <div class="mt-3 inline-block bg-[#3e3a3a] text-white text-xs px-2 py-1 rounded">国家資格</div>
+                    </div>
+                </div>
+
+                <!-- 資格カード3: OutSystems Associate Developer -->
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-[#ced7dc] rounded-full flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-[#3e3a3a]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800">OutSystems Associate Developer</h3>
+                    </div>
+                    <div class="ml-16">
+                        <p class="text-gray-600 mb-2">OutSystems</p>
+                        <p class="text-sm text-gray-500">取得年月: 2020年6月</p>
+                        <div class="mt-3 inline-block bg-[#3e3a3a] text-white text-xs px-2 py-1 rounded">ベンダー資格</div>
+                    </div>
+                </div>
+
+                <!-- 資格カード4: OutSystems Professional Developer -->
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-[#ced7dc] rounded-full flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-[#3e3a3a]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800">OutSystems Professional Developer</h3>
+                    </div>
+                    <div class="ml-16">
+                        <p class="text-gray-600 mb-2">OutSystems</p>
+                        <p class="text-sm text-gray-500">取得年月: 2021年3月</p>
+                        <div class="mt-3 inline-block bg-[#3e3a3a] text-white text-xs px-2 py-1 rounded">ベンダー資格</div>
+                    </div>
+                </div>
+
+                <!-- 資格カード5: OutSystems Architecture Specialist -->
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-[#ced7dc] rounded-full flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-[#3e3a3a]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800">OutSystems Architecture Specialist</h3>
+                    </div>
+                    <div class="ml-16">
+                        <p class="text-gray-600 mb-2">OutSystems</p>
+                        <p class="text-sm text-gray-500">取得年月: 2022年1月</p>
+                        <div class="mt-3 inline-block bg-[#3e3a3a] text-white text-xs px-2 py-1 rounded">ベンダー資格</div>
+                    </div>
+                </div>
+
+                <!-- 資格カード6: Salesforce Administrator -->
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-[#ced7dc] rounded-full flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-[#3e3a3a]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800">Salesforce Administrator</h3>
+                    </div>
+                    <div class="ml-16">
+                        <p class="text-gray-600 mb-2">Salesforce</p>
+                        <p class="text-sm text-gray-500">取得年月: 2020年9月</p>
+                        <div class="mt-3 inline-block bg-[#3e3a3a] text-white text-xs px-2 py-1 rounded">ベンダー資格</div>
+                    </div>
+                </div>
+
+                <!-- 資格カード7: Salesforce Platform Developer I -->
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-[#ced7dc] rounded-full flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-[#3e3a3a]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800">Salesforce Platform Developer I</h3>
+                    </div>
+                    <div class="ml-16">
+                        <p class="text-gray-600 mb-2">Salesforce</p>
+                        <p class="text-sm text-gray-500">取得年月: 2021年5月</p>
+                        <div class="mt-3 inline-block bg-[#3e3a3a] text-white text-xs px-2 py-1 rounded">ベンダー資格</div>
+                    </div>
+                </div>
+
+                <!-- 資格カード8: Salesforce Platform Developer II -->
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-[#ced7dc] rounded-full flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-[#3e3a3a]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800">Salesforce Platform Developer II</h3>
+                    </div>
+                    <div class="ml-16">
+                        <p class="text-gray-600 mb-2">Salesforce</p>
+                        <p class="text-sm text-gray-500">取得年月: 2022年3月</p>
+                        <div class="mt-3 inline-block bg-[#3e3a3a] text-white text-xs px-2 py-1 rounded">ベンダー資格</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer class="bg-[#3e3a3a] text-white py-8">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <p class="text-xl font-bold">山田 太郎</p>
+                    <p class="text-gray-400">ウェブデベロッパー</p>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="https://twitter.com/marua_0302" target="_blank"
+                        class="text-gray-400 hover:text-white transition duration-300 flex items-center">
+                        <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723 10.054 10.054 0 01-3.127 1.195 4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z">
+                            </path>
+                        </svg>
+                        @marua_0302
+                    </a>
+                </div>
+            </div>
+            <div class="mt-8 border-t border-gray-700 pt-6 text-center">
+                <p class="text-gray-400">© 2023 山田 太郎. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // モバイルメニューの切り替え
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.querySelector('.mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // スムーススクロール
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+
+                window.scrollTo({
+                    top: targetElement.offsetTop - 70,
+                    behavior: 'smooth'
+                });
+
+                // モバイルメニューが開いている場合は閉じる
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+    </script>
+    <script>(function () { function c() { var b = a.contentDocument || a.contentWindow.document; if (b) { var d = b.createElement('script'); d.innerHTML = "window.__CF$cv$params={r:'9453bfc3148f0fa2',t:'MTc0ODE2MjY0Ny4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);"; b.getElementsByTagName('head')[0].appendChild(d) } } if (document.body) { var a = document.createElement('iframe'); a.height = 1; a.width = 1; a.style.position = 'absolute'; a.style.top = 0; a.style.left = 0; a.style.border = 'none'; a.style.visibility = 'hidden'; document.body.appendChild(a); if ('loading' !== document.readyState) c(); else if (window.addEventListener) document.addEventListener('DOMContentLoaded', c); else { var e = document.onreadystatechange || function () { }; document.onreadystatechange = function (b) { e(b); 'loading' !== document.readyState && (document.onreadystatechange = e, c()) } } } })();</script>
+    <iframe height="1" width="1"
+        style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;"></iframe>
+
+</body>
+
+</html>
